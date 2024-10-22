@@ -1,11 +1,11 @@
 import * as S from "./styles";
 import logoImg from "@assets/logo.png";
 
-type THeader = {
-  showBackButton: boolean;
+type HeaderProps = {
+  showBackButton?: boolean;
 };
 
-export function Header({ showBackButton = false }: THeader) {
+export function Header({ showBackButton = false }: HeaderProps) {
   return (
     <S.Container>
       {showBackButton && (

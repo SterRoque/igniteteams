@@ -1,4 +1,4 @@
-import { Header } from "@components/Loading/Header";
+import { Header } from "@components/Header";
 import * as S from "./styles";
 
 export function Groups() {
