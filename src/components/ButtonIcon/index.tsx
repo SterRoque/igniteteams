@@ -7,9 +7,13 @@ type ButtonIconProps = TouchableOpacityProps & {
   type?: S.TButtonIconStyleProps;
 };
 
-export function ButtonIcon({ icon, type = "PRIMARY" }: ButtonIconProps) {
+export function ButtonIcon({
+  icon,
+  type = "PRIMARY",
+  ...rest
+}: ButtonIconProps) {
   return (
-    <S.Container>
+    <S.Container {...rest}>
       <S.Icon name={icon} type={type} />
     </S.Container>
   );
